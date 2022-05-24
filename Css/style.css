@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,700&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+.head{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)) ,url('../img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    /* border: 2px solid black; */
+}
+/* ##################### navigation bar ########## */
+.logo{
+    font-family: 'Square Peg', cursive;
+    color: white;
+    /* border: 2px solid white; */
+    float:left;
+    position: relative;
+    left: 3em;
+    /* letter-spacing: 0.07em; */
+}
+
+.navitems{
+    float: right;
+    position:relative;
+    top:2em;
+    right: 5em
+}
+.navitem{
+    display: inline-block;
+    margin-left: 2em;
+    padding-bottom: 0.5em;
+    /* color: white */
+    /* float: right; */
+}
+.navitems a:link,
+.navitems a:visited{
+    color: white;
+    text-decoration: none;
+}
+.navitems a:hover{
+    border-bottom: .1em solid white;
+    font-size: 3rem;
+}
+
+/* #################### Utility classes ################## */
+p{
+    margin-top: 0.3em;
+}
+.l{
+    letter-spacing: .3rem;
+}
+.headfont{
+    font-size: 4rem;
+}
+.floatfix{
+    clear:both;
+}
+.linkfont{
+    font-size: 2rem;
+}
+.parafont{
+    font-size: 1.6rem;
+}
+
+.colorred{
+    color: rgb(212, 76, 76);
+}
+.colorblack{
+    color:rgb(7, 7, 7);
+}
+.colorwhite{
+    color: rgb(243, 240, 240);
+}
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.secodarylink{
+    background-color:  rgb(212, 76, 76);
+    color: white;
+}
+.bg-black{
+    background-color: #0e101c;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.bd-bot{
+    border-bottom: .4rem solid  rgb(212, 76, 76);
+}
+/* ######################## HEADER CONTENT ##################### */
+
+.header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    letter-spacing: .1em;
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    transform: translate(-50%,-50%);
+
+}
+
+.header-content .primaryborder{
+    text-decoration: none;
+    background-color: white;
+    display: inline-block;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    margin-top: .5em;
+    border-radius: 100px;
+}
+.header-content a:hover{
+    /* border-bottom: .3em solid rgb(212, 76, 76); */
+    /* text-decoration: underline; */
+    font-size: 3em;
+}
+
+/* ################### Showcase ################## */
+.showcase{
+    background-color: #ddd;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.row{
+    
+    height: 350px;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 20px #aaa ;
+}
+.row1{
+    /* margin-top: 10rem; */
+    margin-bottom: 10rem;
+}
+/* .row2{
+    margin-bottom: 10rem;
+} */
+.row .text-box{
+    background-color: white;
+    padding: 1rem;
+}
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    /* border:2px solid green; */
+}
+.row2 .img-box,
+.row1 .text-box{
+    float: right;
+    /* border:2px solid red; */
+}
+.row .img-box,
+.row .text-box{
+    height: 100%;
+    width:50%;
+}
+.row .img-box img{
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+}
+
+.showcase .row1 a,
+.showcase .row2 a{
+    background-color:  rgb(212, 76, 76);
+    color: white;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.row1 a:hover,
+.row2 a:hover{
+    font-size: 2.2rem;
+    /* border-bottom: 2px solid white; */
+    text-decoration: underline;
+}
+
+/* ################# Features ###################### */
+
+.features{
+    background-color: white;
+}
+/* .features .box-wrapper{
+    border: 2px solid black;
+} */
+.box-wrapper{
+    margin-top:10rem;
+    height: 25rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.786);
+    margin-bottom: 10rem;
+}
+.box{
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+    /* border: 2px solid green; */
+    text-align:center;
+    padding: 1rem;
+    
+}
+.box1{
+    background-color: rgb(7, 7, 7); 
+    color:rgb(243, 240, 240);
+}
+.box2{
+    background-image: radial-gradient( circle 860px at 11.8% 33.5%,  rgba(240,30,92,1) 0%, rgba(244,49,74,1) 30.5%, rgba(249,75,37,1) 56.1%, rgba(250,88,19,1) 75.6%, rgba(253,102,2,1) 100.2% ); 
+}
+.box3{
+     
+    background-color: rgb(7, 7, 7); 
+    color:rgb(243, 240, 240);
+}
+.box h3{
+    font-size: 2rem;
+}
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* ######################### footer ####################### */
+ 
+.footer{
+    height: 15rem;
+    background-color: rgba(24, 23, 23, 0.865);
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+.social i{
+    margin: 2rem;
+}
+
+/* ##################### About ##################### */
+
+.tick{
+    /* border: 2px solid black; */
+    margin: 2rem;
+    text-align: center;
+}
+.tick li::before{
+    content:'\2713';
+    /* list-style-type: '\2713'; */
+    padding-right: 1rem;
+    color: rgb(212, 76, 76);
+    font-weight: bold;
+}
+.tick .left-tick{
+    float: left;
+    width:50%;
+}
+
+.tick .right-tick{
+    float: left;
+    width:50%;
+}
+.tick li{
+    list-style-type: none;
+}
+.tick::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.numbers{
+    text-align:center;
+    margin-top: 5rem;
+}
+.numbers span{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(212, 76, 76);
+}
+.num1{
+    float:left;
+    width: 25%;
+}
+.num2{
+    float:left;
+    width: 25%;
+}
+.num3{
+    float:left;
+    width: 25%;
+}
+.num4{
+    float:left;
+    width: 25%;
+}
+.numbers::after{
+    content:'';
+    clear:both;
+    display:block;
+}
+.contactus{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.8015581232492998) 0%, rgba(255,0,22,1) 100%);
+    padding: 1rem;
+    margin-top: 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.421);
+}
+.line{
+    font-size: 1.6rem;
+    float:left;
+    color: white;
+}
+.line p{
+    margin: 1.6rem 20rem
+}
+
+.line a{
+    display:inline-block;
+    margin-right: 20rem;
+    
+}
+.contact-tab{
+    font-size: 2rem;
+    float:right;
+    color: white;
+    padding: 1rem;
+    border: .1em solid white;
+    
+}
+.contactus::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.contact-tab a:link{
+    text-decoration: none;
+    color:white;
+}
+.contact-tab a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+/* ##################### Contact Tab ####################### */
+.contact{
+    padding: 10rem;
+    font-size: 2rem;
+    /* background-color: rgba(164, 160, 160, 0.919) */
+    /* background: #201f1f; */
+    /* border: 2px solid rgb(26, 24, 158) */
+}
+.company-address{
+    float: left;
+    width: 48%;
+    /* border: 2px solid red; */
+    height: 760px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.392);
+    background-color: rgba(245, 245, 220, 0.631);
+}
+.company-form{
+    float: right;
+    /* border: 2px solid red; */
+    width: 48%;
+    height: 760px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.392);
+    background-color: rgba(245, 245, 220, 0.622);
+}
+.company-form h1{
+    padding: 1.5rem 2rem; 
+}
+.form-wrapper::after{
+    content:'';
+    display:block;
+    clear: both;
+}
+.address-grp{
+    margin: 2rem
+}
+.address-grp i{
+    display: inline-block;
+    color: rgb(212, 76, 76);
+}
+.address-grp h3{
+    display: inline-block;
+    font-size: 2rem;
+    color:rgb(212, 76, 76);
+    font-weight: 300;
+    padding: 1rem;
+}
+.address-grp a{
+    color: rgb(212, 76, 76);
+    text-decoration: none;
+    font-size: 2rem;
+}
+.company-img img{
+    max-width:90%;
+    min-height: 40rem;
+    max-height: 50rem;
+    background-position: center;
+    object-fit: cover;
+    margin-left: 10rem ;
+}
+
+.formgrp label{
+    display: block;
+    margin:.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.formgrp input{
+    display:block;
+    margin-left:.5rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    padding:.5rem;
+    width: 90%;
+}
+.formgrp textarea{
+    margin: 0 .5rem;
+    width: 90%;
+}
+.formgrp label::after{
+    content: '*';
+    color: #e63946;
+}
+.formgrp .btn{
+    width: 30%;
+    background-color: #e63946;
+    border-style: none;
+    font-size: 1.6rem;
+    margin: 1rem auto;
+    color: white;
+}
